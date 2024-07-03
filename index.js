@@ -13,16 +13,47 @@ function insert(){
     
     p.textContent = inserted;
     
-    text.appendChild(p);
+    
+    let importance = document.getElementById('importance').value;
+    
 
-    most= text.style.color ="red";
-    medium= text.style.color ="yellow";
-    least= text.style.color ="green"; 
+    let most = document.getElementById('most');
+    let medium = document.getElementById('medium');
+    let least = document.getElementById('least');
 
-    let most = document.getElementById("most");
-    let medium = document.getElementById("medium");
-    let least = document.getElementById("least");
-    let importance = document.getElementByid("importance");
+    important = most.value;
+    medium = medium.value;
+    least = least.value;
+
+    console.log(importance);
+
+    p.classList.add("important");
+ 
+
+    switch(importance){
+        case 'important':
+            
+            p.className="important";
+            break;
+        case 'medium':
+            
+            p.className="medium";
+            break;
+        case 'least':
+            
+            p.className="least";
+            break;
+
+}
+
+    p.onclick = function(){
+        text.removeChild(p);
+    }
+
+        text.appendChild(p);
+
+        unos.value = '';
 
 
+        
 }

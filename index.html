@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Insert your tasks</h1>
+        <div class="input">
+            <input type="text" id="unos" placeholder="insert task here
+            ">
+            <h2>Importance of the task</h2>
+            <label for="importance"></label>
+
+            <select name="importance" id="importance">
+                <option value="important" id="most">Important</option>
+                <option value="medium" id="medium">Medium importance</option>
+                <option value="least" id="least">Least important</option>
+            </select>
+
+            <button onclick="insert()" id="button">Add</button>
+        </div>
+        <ul id="text">
+        </ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

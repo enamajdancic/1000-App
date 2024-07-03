@@ -6,7 +6,7 @@ body{
     margin: 0 auto;
     
 }
-h1{
+h1,h2{
     font-weight: 1;
 
 }
@@ -57,4 +57,29 @@ ul{
 ul li{
     text-align: center;
     margin: 25px;
+}
+
+ul li:hover{
+    text-decoration: line-through ;
+}
+
+select{
+    width: fit-content;
+    height: 30px;
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    text-align: center;
+}
+
+.important{
+    color: red;
+}
+
+.medium{
+    color: orange;
+}
+
+.least{
+    color: green;
 }
